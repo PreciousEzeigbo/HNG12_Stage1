@@ -2,20 +2,20 @@
 A RESTful API built with Flask that provides mathematical properties and fun facts about numbers.
 
 # Features
-Determines if a number is prime
+<li>Determines if a number is prime
 Determines if a number is perfect
 Identifies Armstrong number, even and odd
 Calculates digit sum
 Fetches fun mathematical facts from numbersapi.com
 CORS enabled
-Input validation and error handling
+Input validation and error handling</li>
 
 # Dependencies
-Python 3.8+
+<li>Python 3.8+
 Flask
 Flask-CORS
 Requests library
-Gunicorn (for production deployment)
+Gunicorn (for production deployment)</li>
 
 # Installation
 Clone the repository:
