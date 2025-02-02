@@ -24,7 +24,6 @@ def is_perfect(n: int) -> bool:
 
 def is_armstrong(n: int) -> bool:
     """Check if a number is an Armstrong number."""
-    # Handle negative numbers - Armstrong numbers are typically defined only for positive integers
     if n < 0:
         return False
     num_str = str(abs(n))
@@ -83,7 +82,6 @@ def classify_number():
         return jsonify({
             "number": number,
             "error": True,
-            "message": "Input must be an integer"
         }), 400
 
 if __name__ == '__main__':
