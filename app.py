@@ -62,10 +62,7 @@ def classify_number():
     
     try:
         num = int(number)
-    except ValueError:
-        return jsonify({"number": number, "error": True}), 400
-        
-        # Return the response with appropriate handling of negative numbers
+        # Response should be in the try block
         response = {
             "number": num,
             "is_prime": is_prime(num),
@@ -79,8 +76,7 @@ def classify_number():
     except ValueError:
         return jsonify({
             "number": number,
-            "error": True,
-        }), 400
-
+            "error": True
+        }), 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
