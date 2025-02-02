@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 Run the development server:
 ```
-python number-classifier.py
+python app.py
 ```
 
 # API Documentation
