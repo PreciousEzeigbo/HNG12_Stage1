@@ -1,22 +1,21 @@
 # HNG12_Stage1
 A RESTful API built with Flask that provides mathematical properties and fun facts about numbers.
 
-# Features
-<li>Determines if a number is prime
-Determines if a number is perfect
-Identifies Armstrong number, even and odd
-Calculates digit sum
-Fetches fun mathematical facts from numbersapi.com
-CORS enabled
-Input validation and error handling</li>
+## Features  
+- Determines if a number is **prime**  
+- Determines if a number is **perfect**  
+- Identifies **Armstrong numbers**, **even**, and **odd** numbers  
+- Calculates **digit sum**  
+- Fetches fun mathematical facts from [Numbers API](http://numbersapi.com/)  
+- **CORS enabled**  
+- Input validation and error handling  
 
-# Dependencies
-<li>Python 3.8+
-Flask
-Flask-CORS
-Requests library
-Gunicorn (for production deployment)</li>
-
+## Dependencies  
+- Python **3.8+**  
+- Flask  
+- Flask-CORS  
+- Requests library  
+- Gunicorn (for production deployment)  
 # Installation
 Clone the repository:
 ```
