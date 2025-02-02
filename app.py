@@ -58,14 +58,12 @@ def classify_number():
     number = request.args.get('number')
     
     if not number:
-        return jsonify({
-            "number": "missing",
-            "error": True,
-            "message": "Number parameter is required"
-        }), 400
+        return jsonify({"number": "missing", "error": True}), 400
     
     try:
         num = int(number)
+    except ValueError:
+        return jsonify({"number": number, "error": True}), 400
         
         # Return the response with appropriate handling of negative numbers
         response = {
