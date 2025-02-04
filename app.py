@@ -31,8 +31,13 @@ def is_armstrong(n: int) -> bool:
     return sum(int(digit) ** power for digit in num_str) == n
 
 def get_digit_sum(n: int) -> int:
-    """Calculate the sum of digits."""
-    return sum(int(digit) for digit in str(abs(n)))
+    """Calculate the sum of digits, preserving the sign for negative numbers."""
+    # For positive numbers, sum as is
+    if n >= 0:
+        return sum(int(digit) for digit in str(n))
+    # For negative numbers, calculate sum and make it negative
+    else:
+        return -sum(int(digit) for digit in str(abs(n)))
 
 def get_properties(n: int) -> list:
     """Get list of properties (armstrong, odd/even)."""
