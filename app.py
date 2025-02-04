@@ -47,9 +47,9 @@ def get_fun_fact(n: int) -> str:
     try:
         response = requests.get(f"http://numbersapi.com/{n}/math", timeout=5)
         if response.status_code == 200:
-            # Remove trailing newline if present
             return response.text.strip()
         return f"{n} is a number"
+
     except requests.RequestException:
         return f"{n} is a number"
 
@@ -60,7 +60,7 @@ def classify_number():
     
     if not number:
         return jsonify({
-            "number": "missing",
+            "number": "alphabet",
             "error": True
         }), 400
     
