@@ -78,7 +78,7 @@ def classify_number():
         
     except ValueError:
         return jsonify({
-            "number": number,
+            "number": "alphabet",
             "error": True
         }), 400
 
